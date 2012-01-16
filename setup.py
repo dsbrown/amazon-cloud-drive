@@ -25,7 +25,7 @@
 from setuptools import setup
 
 setup(name = "amazon-cloud-drive",
-      version = '0.1.0',
+      version = '0.0.6',
       description = "A maintained fork of PyAmazonCloudDrive (pyacd), a "\
                     "3rd-party Python library for accessing Amazon Cloud "\
                     "Drives.",
