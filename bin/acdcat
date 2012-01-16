@@ -112,7 +112,7 @@ def main():
   elif not session.is_valid():
     sys.stderr.write("Session is invalid.\n%s\n"%session)
     sys.exit(2)
-  elif not session.is_logined():
+  elif not session.is_logged_in():
     sys.stderr.write("Login failed.\n%s\n"%session)
     sys.exit(2)
 
