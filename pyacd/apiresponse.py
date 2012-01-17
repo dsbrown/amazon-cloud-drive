@@ -108,6 +108,9 @@ class Info(object):
     #if self.modified:
     #  time.asctime(time.localtime(self.purchased))
 
+    def __eq__(self, other):
+        return type(self) == type(other) and hash(self) == hash(other)
+
   def __hash__(self):
     return hash((self.name, self.Type, self.path, self.md5, self.modified))
 
