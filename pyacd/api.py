@@ -74,7 +74,7 @@ except ImportError,e:
   import simplejson as json
 
 import pyacd
-from apiresponse import *
+from .apiresponse import *
 
 
 def _error_check(resp_json):
