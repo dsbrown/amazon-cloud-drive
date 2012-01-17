@@ -108,6 +108,9 @@ class Info(object):
     #if self.modified:
     #  time.asctime(time.localtime(self.purchased))
 
+  def __hash__(self):
+    return hash((self.name, self.Type, self.path, self.md5, self.modified))
+
   def __repr__(self):
     return '<Info: %s%s (type=%s,status=%s,version=%d)>' % (self.path,self.name,self.Type,self.status,self.version)
 
